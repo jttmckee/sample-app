@@ -1,24 +1,26 @@
-# README
+# Ruby on Rails Tutorial sample application
+This is the sample application for [*Ruby on Rails Tutorial*](http://www.railstutorial.org/)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## License
+All source code in the [Ruby on Rails Tutorial](http://railstutorial.org/) is available jointly under the MIT License and the Beerware License.
 
-Things you may want to cover:
+##Getting started
+To get started with the app, clone the repo and then install the gems:
+```
+$ bundle install --without production
+```
 
-* Ruby version
+Next, migrate the database:
 
-* System dependencies
+```
+$ rails db:migrate
+```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Finally, run the test suite to check everything is working correctly:
+```
+$ rails test
+```
+If the test suite passes, the app is ready to run on a local server:
+```
+$ rails server
+```
